@@ -1,0 +1,125 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-grey:hsl(210,32%,22%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--very-dark-blue);
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+p {
+    font-weight: 400;
+    color: var(--light-grey);
+    line-height: 1.6;
+    margin: 1rem 0;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card, .thankyou-card {
+    background: var(--dark-blue);
+    width: 410px;
+    padding: 2rem;
+    border-radius: 25px;
+    transform: 
+    perspective(50em);
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    background: var(--dark-grey);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    margin-top: 2rem;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+li {
+    list-style: none;
+    color: var(--medium-grey);
+}
+
+.btn {
+    background: var(--dark-grey);
+    border-radius: 50%;
+    width: 3.3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit {
+    background: var(--orange);
+    height: 3rem;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.btn:hover {
+    background: var(--medium-grey);
+    color: var(--white);
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.thankyou-card {
+    text-align: center;
+    display: none;
+}
+
+.score {
+    color: var(--orange);
+    margin: 2rem 0;
+    background-color: var(--dark-grey);
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    border-radius: 1rem;
+}
